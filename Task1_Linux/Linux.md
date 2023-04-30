@@ -72,7 +72,7 @@ tree removed
 ```powershell
 student@Ubuntu-MySQL-VirtualBox:~$ crontab -e
  */3 * * * * echo "hello world">>/home/student/logs.txt
- */3 * * * * cat /home/student/lws/*.txt > /home/student/lws/*.txt
+ */3 * * * * cat /home/student/log && echo "File Created at $(date)" >> /home/student/log.txt
  student@Ubuntu-MySQL-VirtualBox:~$ crontab -l
 
 ```
