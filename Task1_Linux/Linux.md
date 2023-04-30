@@ -71,5 +71,8 @@ tree removed
 (Например, запись в текстовый файл чего-то или копирование из каталога А в каталог Б).
 ```powershell
 student@Ubuntu-MySQL-VirtualBox:~$ crontab -e
- */3****echo "hello world">>/home/student/logs.txt
+ */3 * * * * echo "hello world">>/home/student/logs.txt
+ */3 * * * * cat /home/student/lws/*.txt > /home/student/lws/*.txt
+ student@Ubuntu-MySQL-VirtualBox:~$ crontab -l
+
 ```
